@@ -14,23 +14,17 @@ void main() {
     test("Time Test Morning ", () {
       /// Unit test 1
 
-      if (DateTime.now().hour <= 12) {
+      if (currentTime.hour < 12) {
         String timeDay = TimerHelper.greeting(currentTime);
 
-        expect(timeDay, "Good Morning");
-      } else if (currentTime.hour < 17) {
-        String timeDay = TimerHelper.greeting(currentTime);
-
-        expect(timeDay, "Good Afternoon");
-      } else {
-        return 'Good Night';
+        expect(timeDay, 'Good Morning');
       }
     });
 
     /// Unit test 2
 
     test("Time Test Afternoon ", () {
-      if (currentTime.hour < 17) {
+      if (currentTime.hour > 12 && currentTime.hour < 17) {
         String timeDay = TimerHelper.greeting(currentTime);
 
         expect(timeDay, "Good Afternoon");
