@@ -1,0 +1,49 @@
+name: future_contract
+description: A new Flutter application.
+
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  sizer: ^2.0.15
+  country_code_picker: ^2.0.2
+  firebase_auth: ^3.3.4
+  firebase_core: ^1.10.6
+  get_storage: ^2.0.3
+  get: ^4.6.1
+
+
+
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+
+flutter:
+
+
+  uses-material-design: true
+
+  assets:
+    - assets/icons/
+    - assets/fonts/
+
+  fonts:
+    - family: Sbold
+      fonts:
+        - asset: assets/fonts/FontsFree-Net-Proxima-Nova-Sbold (1).otf
+          weight: 300
+    - family: Regular
+      fonts:
+        - asset: assets/fonts/ProximaNova-Regular.otf
+          weight: 300
